@@ -1,0 +1,5 @@
+Method,Name,Error,Occurrences
+POST,/dnd-site/login.php,HTTPError('404 Client Error: Not Found for url: /dnd-site/login.php'),50
+GET,/dnd-site/public/student-rating.php,HTTPError('404 Client Error: Not Found for url: /dnd-site/public/student-rating.php'),71
+GET,/dnd-site/dashboard.php,HTTPError('404 Client Error: Not Found for url: /dnd-site/dashboard.php'),227
+GET,/dnd-site/public/bestiary-view.php,HTTPError('404 Client Error: Not Found for url: /dnd-site/public/bestiary-view.php'),90
