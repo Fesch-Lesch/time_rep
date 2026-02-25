@@ -1,0 +1,52 @@
+{
+  "settings": {
+    "login_url": "http://localhost:3000/dnd-site/login.php",
+    "logout_url": "http://localhost:3000/dnd-site/logout.php",
+    "report_folder": "reports",
+    "temp_screenshots": "temp_screens"
+  },
+  "tests": [
+    {
+      "description": "Неверный пароль",
+      "login": "admin",
+      "password": "wrongpassword",
+      "expect_success": false
+    },
+    {
+      "description": "Несуществующий пользователь",
+      "login": "ghost",
+      "password": "password",
+      "expect_success": false
+    },
+    {
+      "description": "Пустой пароль",
+      "login": "admin",
+      "password": "",
+      "expect_success": false
+    },
+    {
+      "description": "Вход: Администратор",
+      "login": "admin",
+      "password": "password",
+      "expect_success": true
+    },
+    {
+      "description": "Вход: Учитель",
+      "login": "teacher1",
+      "password": "password",
+      "expect_success": true
+    },
+    {
+      "description": "Вход: Капитан",
+      "login": "captain_red",
+      "password": "password",
+      "expect_success": true
+    },
+    {
+  "description": "Вход: Новый Пользователь",
+  "login": "new_user",
+  "password": "user_password",
+  "expect_success": false
+    }
+  ]
+}
